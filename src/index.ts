@@ -16,8 +16,8 @@ connectDB();
 
 // Middleware
 const allowedOrigins = [
-  'https://calm-longma-4539f9.netlify.app',
   'http://localhost:5173',
+  process.env.FRONTEND_URL
 ].filter(Boolean);
 
 app.use(cors({
