@@ -40,8 +40,6 @@ app.use(cors({
   maxAge: 86400 // 24 hours - cache preflight
 }));
 
-app.options('*', cors());
-
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 
